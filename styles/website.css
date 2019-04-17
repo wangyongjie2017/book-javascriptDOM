@@ -1,0 +1,120 @@
+
+iframe:not([title="Disqus"]) {
+    box-shadow: 0 0 10px 0px #dacdcd;
+}
+/* 代码片段显示问题 */
+
+img:not(.emoji) {
+    box-shadow: 0 0 3px 0px #dacdcd;
+    margin: 15px 0;
+}
+
+p:not(#QR p) {
+    text-align: justify;
+}
+
+.markdown-section table th {
+    background: #929090;
+    color: #fff;
+}
+
+tr:hover td{
+    background: #b6f1bca8;
+}
+
+.markdown-section h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #ccc;
+}
+
+.markdown-section h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #635f5f;
+}
+
+.markdown-section h4 {
+    font-size: 1.1em;
+    /* text-indent: 2em; */
+}
+
+.markdown-section h4~p {
+    text-indent: 2em;
+}
+
+/* --------------------------------------------- */
+
+.page-inner-bottom {
+    margin-top: 100px;
+    text-align: center;
+    color: #ccc;
+    /* box-shadow: 0 0 50px 0 #ccc; */
+}
+
+.book-header h1 {
+    opacity: 1;
+}
+
+
+/* ----注脚----------------------------------------- */
+sup a::before {
+    content: "[";
+}
+
+sup a::after{
+    content: "]";
+}
+
+/* 经过文本 */
+blockquote.danger{
+    background-color: #fdf7f7;
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+/* --------------------------------------------- */
+
+
+
+/* --------------加粗文字颜色------------------- */
+
+.markdown-section strong {
+    color: #FF5722;
+}
+
+/* -----------------引用警告--------------------- */
+
+#danger+blockquote {
+    color: #ff0000;
+    border-left: 4px solid #ff0000;
+    font-family: serif;
+    background: #fdf7f7;
+}
+
+
+
+
+
+
+blockquote.default:hover a{
+    color: red;
+    padding-bottom: 3px;
+    text-decoration: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23ff3300' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%;
+    background-size: 20px auto;
+    background-position: 100px 100%;
+    animation: wang 1s infinite linear;
+}
+
+
+@keyframes wang {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: -20px 100%;
+    }
+}
+
+
+
